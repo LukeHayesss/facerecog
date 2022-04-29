@@ -4,6 +4,7 @@ import "./App.css"
 import { useEffect } from "react";
 import NewPost from "./components/NewPost";
 
+
 const App = () => {
   const [file, setFile] = useState();
   const [image, setImage] = useState();
@@ -30,13 +31,15 @@ const App = () => {
       {image ? (<NewPost image={image}/>) : (
 
       
-      <div className="newPostCard">
+//profile photo//
+      <div className="newPostCard">        
         <div className="addPost">
           <img
-          src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?cs=srgb&dl=pexels-mentatdgt-937481.jpg&fm=jpg"
+          src="https://anotherimg-dazedgroup.netdna-ssl.com/1149/34-34-1149-766/azure/another-prod/370/2/372730.jpg"
           alt=""
           className="avatar"
           />
+{/* main input           */}
           <div className="postForm">
             <input
             type="text"
@@ -45,17 +48,19 @@ const App = () => {
             />
 
             <label htmlFor="file">
-
+{/* upload image icon */}
                 <img
                 className="addImg"
                 src="https://cdn.icon-icons.com/icons2/564/PNG/512/Add_Image_icon-icons.com_54218.png"
                 alt=""
                 />
+{/* location icon                 */}
                 <img
                 className="addImg"
                 src="https://icon-library.com/images/maps-icon-png/maps-icon-png-5.jpg"
                 alt=""
                 />
+{/* calender icon                 */}
                 <img
                 className="addImg"
                 src="https://d29fhpw069ctt2.cloudfront.net/icon/image/84451/preview.svg"
@@ -75,4 +80,5 @@ const App = () => {
     </div>
   );
 }
+
 export default App;
