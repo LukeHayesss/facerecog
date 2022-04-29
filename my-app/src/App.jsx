@@ -35,7 +35,6 @@ const App = () => {
       <div className="newPostCard">        
         <div className="addPost">
           <img
-          // src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?cs=srgb&dl=pexels-mentatdgt-937481.jpg&fm=jpg"
           src="https://anotherimg-dazedgroup.netdna-ssl.com/1149/34-34-1149-766/azure/another-prod/370/2/372730.jpg"
           alt=""
           className="avatar"
